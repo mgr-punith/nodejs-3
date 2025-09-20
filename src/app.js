@@ -7,7 +7,7 @@ app.use(json());
 // Routes
 app.use("/api", authRoutes);
 
-// Health check
+// check
 app.get("/health", (req, res) => res.json({ status: "ok" }));
 
 export default app;
